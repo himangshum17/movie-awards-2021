@@ -7,6 +7,15 @@ const BallotCard = ({ item, uniqueId, modal }) => {
   const handleNominees = item => {
     if (!nominees.some(e => e.uniqueId === item.uniqueId)) {
       setNominees(prev => [...prev, item]);
+    } else {
+      const newState = nominees.map(obj => {
+        if (obj.uniqueId === item.uniqueId) {
+          return item;
+        }
+        return obj;
+      });
+
+      setNominees(newState);
     }
   };
   return (
