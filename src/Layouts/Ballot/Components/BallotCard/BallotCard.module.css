@@ -1,0 +1,29 @@
+.BallotCard {
+  padding: 16px;
+  background-color: var(--cardBG);
+}
+.BallotCardActive {
+  background-color: var(--cardhoverBG);
+}
+.BallotCard:hover {
+  background-color: var(--cardhoverBG);
+}
+.BallotCard img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.title {
+  color: var(--white);
+}
+.button {
+  background-color: var(--buttonBG);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  padding: 8px 24px;
+  color: var(--white);
+}
+.button:hover {
+  background-color: var(--hoverBG);
+}

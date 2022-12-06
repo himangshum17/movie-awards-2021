@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import BallotContextProvider from './Context/Ballot.context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BallotContextProvider>
+      <App />
+    </BallotContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

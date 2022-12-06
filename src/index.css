@@ -1,13 +1,31 @@
+:root {
+  --darkBG: #0d2436;
+  --white: #ffffff;
+  --buttonBG: #009b86;
+  --cardBG: #2d4c64;
+  --cardhoverBG: #4d7491;
+  --hoverBG: #34ac9c;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--darkBG);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
