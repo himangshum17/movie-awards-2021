@@ -18,7 +18,7 @@ const Ballot = () => {
 
   return (
     <>
-      <section>
+      <section className={styles.ballotSection}>
         <div className='container'>
           {data?.map(item => (
             <div key={item.id}>

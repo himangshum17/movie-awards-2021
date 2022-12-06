@@ -1,3 +1,6 @@
+.ballotSection {
+  padding: 40px 0;
+}
 .button {
   background-color: var(--buttonBG);
   text-transform: uppercase;
