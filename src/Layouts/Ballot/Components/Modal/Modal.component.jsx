@@ -29,6 +29,7 @@ const Modal = ({ onHandleModalOpen }) => {
               <BallotCard
                 key={item.id}
                 item={{ photoUrL: item.photoUrL, title: item.title }}
+                modal
               />
             ))}
           </div>
